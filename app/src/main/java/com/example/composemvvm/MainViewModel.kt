@@ -26,7 +26,7 @@ class MainViewModel @Inject constructor(
     private val coroutineDispatcherProvider: CoroutineDispatcherProvider
 ) : ViewModel() {
 
-    private var city: String = "Austin, TX"
+    private var city: String = "Atlanta, GA"
     private val _uiState = MutableStateFlow<WeatherUiState>(WeatherUiState.Empty)
     val uiState: StateFlow<WeatherUiState> = _uiState
 
@@ -90,7 +90,7 @@ class MainViewModel @Inject constructor(
     }
 
     companion object {
-        const val AUSTIN_LONG = "-97.733330"
-        const val AUSTIN_LAT = "30.266666"
+        const val AUSTIN_LONG = "-84.386330"
+        const val AUSTIN_LAT = "33.753746"
     }
 }
